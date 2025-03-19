@@ -1,0 +1,164 @@
+/* default style */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navi bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* for section */
+section {
+    width: 70%;
+    margin: 100px auto 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* profile image style */
+.profile-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* for projects */
+.projects {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.project {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project:hover {
+    background-color: lightgray; /* 마우스 오버 시 배경색 변경 */
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.project-number {
+    color: #FF4500;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.project-title {
+    flex-grow: 1;
+    font-size: 1.2rem;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.view-details {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: underline;
+}
+
+/* for footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    width: 300px; 
+    border-radius: 5px;
+}
